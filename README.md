@@ -1,1 +1,1 @@
-Open https://ab-tech-red.vercel.app with your browser to see the result.
+Open https://ab-tech-gamma.vercel.app with your browser to see the result.
