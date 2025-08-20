@@ -4,25 +4,31 @@ import { EnvelopeIcon } from '@heroicons/react/24/outline';
 import AboutButton from "./components/AboutButton";
 import RevealText from "./components/RevealText";
 import Slider from "./components/Slider";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Image from "next/image";
+import ViewImageModal, { ViewImageModalRef } from "./components/ViewImage";
 
 export default function Home() {
 
     const [lang, setLang] = useState<'en' | 'pt'>('en');
     const isPT = lang === 'pt';
 
+    const modalRef = useRef<ViewImageModalRef>(null);
+
     return (
         <div className="flex flex-col gap-8 mx-auto my-4 mt-20 max-w-[700px] px-4 ">
 
             <RevealText>
-                <Image
-                    src="/logo/logo_f.png"
-                    alt="Logo"
-                    width={300}
-                    height={100}
-                    className="mx-auto mb-4"
-                />
+                <div className="relative w-[300px] h-[100px] mx-auto mb-4">
+                    <Image
+                        src="/logo/logo_f.png"
+                        alt="Logo"
+                        fill
+                        sizes="(max-width: 768px) 80vw, 300px"
+                        className="object-contain"
+                        priority
+                    />
+                </div>
             </RevealText>
 
             <RevealText className="flex flex-row justify-between items-center">
@@ -79,10 +85,12 @@ export default function Home() {
             </RevealText>
 
             <RevealText>
-                <Slider images={[
-                    "/portfolio/foto12.png",
-                    "/portfolio/foto15.png"
-                ]} />
+                <Slider
+                    images={[
+                        "/portfolio/foto12.png",
+                        "/portfolio/foto7.png"
+                    ]}
+                />
             </RevealText>
 
             <div className="grid grid-cols-2 gap-4">
@@ -113,9 +121,10 @@ export default function Home() {
 
             <RevealText>
                 <Slider images={[
-                    "/portfolio/foto7.png",
+                    "/portfolio/foto15.png",
                     "/portfolio/foto3.png"
-                ]} />
+                ]}
+                    onImageClick={(src) => modalRef.current?.open(src)} />
             </RevealText>
 
             <div className="grid grid-cols-2 gap-4">
@@ -208,6 +217,7 @@ export default function Home() {
                     </RevealText>
                 </div>
             </div>
+            <ViewImageModal ref={modalRef} />
         </div>
     );
 }
