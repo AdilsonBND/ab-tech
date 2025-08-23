@@ -121,7 +121,7 @@ export default function Home() {
 
             <RevealText>
                 <Slider images={[
-                    "/portfolio/foto15.png",
+                    "/portfolio/foto18.png",
                     "/portfolio/foto3.png"
                 ]}
                     onImageClick={(src) => modalRef.current?.open(src)} />
@@ -188,9 +188,11 @@ export default function Home() {
 
             <RevealText>
                 <Slider images={[
-                    "/portfolio/foto14.png",
+                    "/portfolio/foto20.png",
                     "/portfolio/foto13.png"
-                ]} />
+                ]} 
+                onImageClick={(src) => modalRef.current?.open(src)}
+                />
             </RevealText>
 
             <div className="grid grid-cols-2 gap-4">
