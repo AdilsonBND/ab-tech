@@ -1,6 +1,6 @@
 'use client';
 
-import { EnvelopeIcon } from '@heroicons/react/24/outline';
+import { ChartBarIcon } from '@heroicons/react/24/outline';
 import AboutButton from "./components/AboutButton";
 import RevealText from "./components/RevealText";
 import Slider from "./components/Slider";
@@ -33,8 +33,9 @@ export default function Home() {
 
             <RevealText className="flex flex-row justify-between items-center">
                 <div className="cursor-pointer flex flex-row items-center text-sm font-bold bg-white/5 border border-white/10 hover:border-white/10 hover:bg-white/5 animation rounded-4xl items-align-center px-15"
-                    onClick={() => window.location.href = 'mailto:adilsonbnd@hotmail.com'}>
-                    <EnvelopeIcon className="w-6 h-6 text-white/50 mr-3" /> Contato
+                    onClick={() => window.open('https://ab-tech-crm.vercel.app/', '_blank')}>
+                    <ChartBarIcon className="w-6 h-6 text-white/50 mr-3" /> 
+                    {isPT ? "VISITE NOSSO CRM" : "VISIT OUR CRM"}
                 </div>
 
                 <div className="flex gap-1">
