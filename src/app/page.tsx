@@ -35,7 +35,7 @@ export default function Home() {
                 <div className="cursor-pointer flex flex-row items-center text-sm font-bold bg-white/5 border border-white/10 hover:border-white/10 hover:bg-white/5 animation rounded-4xl items-align-center px-15"
                     onClick={() => window.open('https://ab-tech-crm.vercel.app/', '_blank')}>
                     <ChartBarIcon className="w-6 h-6 text-white/50 mr-3" /> 
-                    {isPT ? "VISITE NOSSO CRM" : "VISIT OUR CRM"}
+                    {isPT ? "Visite nosso CRM" : "Visit our CRM"}
                 </div>
 
                 <div className="flex gap-1">
@@ -86,12 +86,40 @@ export default function Home() {
             </RevealText>
 
             <RevealText>
-                <Slider
-                    images={[
-                        "/portfolio/foto12.png",
-                        "/portfolio/foto7.png"
-                    ]}
-                />
+                <div 
+                    className="relative w-full h-64 md:h-96 rounded-2xl border border-white/10 cursor-pointer group hover:border-white/30 hover:scale-[1.02] transition-all duration-300 flex items-center justify-center overflow-hidden"
+                    onClick={() => window.open('https://ab-tech-crm.vercel.app/', '_blank')}
+                    role="button"
+                    tabIndex={0}
+                    onKeyDown={(e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                            window.open('https://ab-tech-crm.vercel.app/', '_blank');
+                        }
+                    }}
+                >
+                    {/* Background Image */}
+                    <Image
+                        src="/portfolio/foto7.png"
+                        alt="CRM Background"
+                        fill
+                        sizes="(max-width: 768px) 100vw, 700px"
+                        className="object-cover select-none"
+                        priority
+                        draggable={false}
+                    />
+                    
+                    <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-all duration-300"></div>
+                    
+                    <div className="relative z-10 text-center">
+                        <ChartBarIcon className="w-16 h-16 text-white/90 mx-auto mb-4 group-hover:text-white group-hover:scale-110 transition-all duration-300" />
+                        <h3 className="text-xl font-bold text-white mb-2 group-hover:text-white/90">
+                            {isPT ? "VISITE NOSSO CRM" : "VISIT OUR CRM"}
+                        </h3>
+                        <p className="text-sm text-white/80 group-hover:text-white/90">
+                            {isPT ? "Sistema de gestão completo" : "Complete management system"}
+                        </p>
+                    </div>
+                </div>
             </RevealText>
 
             <div className="grid grid-cols-2 gap-4">
@@ -122,6 +150,7 @@ export default function Home() {
 
             <RevealText>
                 <Slider images={[
+                    "/portfolio/foto12.png",
                     "/portfolio/foto18.png",
                     "/portfolio/foto3.png"
                 ]}
@@ -189,6 +218,7 @@ export default function Home() {
 
             <RevealText>
                 <Slider images={[
+                    "/portfolio/foto18.png",
                     "/portfolio/foto20.png",
                     "/portfolio/foto13.png"
                 ]} 
