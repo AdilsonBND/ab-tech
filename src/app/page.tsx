@@ -38,6 +38,20 @@ export default function Home() {
                     {isPT ? "Visite nosso CRM" : "Visit our CRM"}
                 </div>
 
+                <div className="cursor-pointer flex flex-row items-center text-sm font-bold bg-white/5 border border-white/10 hover:border-white/10 hover:bg-white/5 animation rounded-4xl items-align-center px-15"
+                    onClick={() => window.open('https://wa.me/5544998329619', '_blank')}>
+                    <div className="w-6 h-6 relative mr-3">
+                        <Image
+                            src="/contact/whats.png"
+                            alt="WhatsApp"
+                            width={24}
+                            height={24}
+                            className="object-contain filter brightness-0 invert opacity-50 hover:opacity-100 transition-opacity duration-300"
+                        />
+                    </div> 
+                    {isPT ? "Agente Exemplo" : "Agent Example"}
+                </div>
+
                 <div className="flex gap-1">
                     <button onClick={() => setLang('pt')}>
                         <Image
