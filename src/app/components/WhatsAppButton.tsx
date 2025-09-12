@@ -20,7 +20,7 @@ export default function WhatsAppButton({ lang }: WhatsAppButtonProps) {
     window.open(whatsappUrl, '_blank');
   };
 
-  const handleClose = (e: React.MouseEvent) => {
+  const handleClose = (e: React.MouseEvent | React.KeyboardEvent) => {
     e.stopPropagation();
     setIsVisible(false);
   };
@@ -31,7 +31,7 @@ export default function WhatsAppButton({ lang }: WhatsAppButtonProps) {
     <div className="fixed bottom-6 right-6 z-50">
       <button
         onClick={handleClick}
-        className="group relative bg-white/15 hover:bg-white/20 text-white rounded-2xl px-4 py-2 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-green-300 flex items-center gap-2 min-w-[200px]"
+        className="group relative border border-white/10 hover:border-white/10 hover:bg-white/5 rounded-2xl px-4 py-2 bg-transparent transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-green-300 flex items-center gap-2 min-w-[200px]"
         aria-label={lang === 'pt' ? "Exemplo de Agente" : "Agent Example"}
         title={lang === 'pt' ? "Exemplo de Agente" : "Agent Example"}
       >
@@ -54,7 +54,7 @@ export default function WhatsAppButton({ lang }: WhatsAppButtonProps) {
           aria-label={lang === 'pt' ? "Fechar" : "Close"}
           onKeyDown={(e) => {
             if (e.key === 'Enter' || e.key === ' ') {
-              handleClose(e as any);
+              handleClose(e);
             }
           }}
         >
