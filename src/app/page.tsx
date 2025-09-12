@@ -4,6 +4,7 @@ import { ChartBarIcon } from '@heroicons/react/24/outline';
 import AboutButton from "./components/AboutButton";
 import RevealText from "./components/RevealText";
 import Slider from "./components/Slider";
+import WhatsAppButton from "./components/WhatsAppButton";
 import React, { useState, useRef } from "react";
 import Image from "next/image";
 import ViewImageModal, { ViewImageModalRef } from "./components/ViewImage";
@@ -37,21 +38,6 @@ export default function Home() {
                     <ChartBarIcon className="w-6 h-6 text-white/50 mr-3" /> 
                     {isPT ? "Visite nosso CRM" : "Visit our CRM"}
                 </div>
-
-                <div className="cursor-pointer flex flex-row items-center text-sm font-bold bg-white/5 border border-white/10 hover:border-white/10 hover:bg-white/5 animation rounded-4xl items-align-center px-15"
-                    onClick={() => window.open('https://wa.me/5544998329619', '_blank')}>
-                    <div className="w-6 h-6 relative mr-3">
-                        <Image
-                            src="/contact/whats.png"
-                            alt="WhatsApp"
-                            width={24}
-                            height={24}
-                            className="object-contain filter brightness-0 invert opacity-50 hover:opacity-100 transition-opacity duration-300"
-                        />
-                    </div> 
-                    {isPT ? "Agente Exemplo" : "Agent Example"}
-                </div>
-
                 <div className="flex gap-1">
                     <button onClick={() => setLang('pt')}>
                         <Image
@@ -265,6 +251,9 @@ export default function Home() {
                 </div>
             </div>
             <ViewImageModal ref={modalRef} />
+            <RevealText>
+            <WhatsAppButton lang={lang} />
+            </RevealText>
         </div>
     );
 }
