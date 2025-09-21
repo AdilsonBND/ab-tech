@@ -4,6 +4,8 @@ import "./globals.css";
 import VisualBackground from "@/app/components/VisualBackGround";
 import Footer from "./components/Footer";
 import HeaderPage from "./components/HeaderPage";
+import StructuredData from "./components/StructuredData";
+import GoogleAnalytics from "./components/GoogleAnalytics";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,8 +18,84 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ABTech by Adilson Biondo",
-  description: "By Adilson Biondo",
+  title: "ABTech - Integração de Sistemas Legados com IA | Agentes de Atendimento Inteligentes",
+  description: "Especialistas em integração de sistemas antigos com IA em Campo Mourão, Maringá, Cianorte, Umuarama e região. Criamos agentes de atendimento inteligentes e modernizamos sistemas legados com soluções em nuvem, automação e inteligência artificial.",
+  keywords: [
+    "integração sistemas legados",
+    "agentes atendimento IA",
+    "modernização sistemas antigos",
+    "inteligência artificial",
+    "automação sistemas",
+    "sistemas legados",
+    "integração IA",
+    "chatbot inteligente",
+    "transformação digital",
+    "sistemas em nuvem",
+    "automação inteligente",
+    "conectividade sistemas",
+    "integração IA Campo Mourão",
+    "integração IA Maringá",
+    "integração IA Cianorte",
+    "integração IA Umuarama",
+    "integração IA Paraná",
+    "sistemas legados Campo Mourão",
+    "agentes atendimento IA Maringá",
+    "modernização sistemas Cianorte",
+    "inteligência artificial Umuarama",
+    "automação sistemas Paraná",
+    "chatbot inteligente Campo Mourão",
+    "transformação digital Maringá",
+    "sistemas em nuvem Cianorte",
+    "ABTech",
+    "Adilson Biondo"
+  ],
+  authors: [{ name: "Adilson Biondo", url: "https://ab-tech.ia.br" }],
+  creator: "ABTech",
+  publisher: "ABTech",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'pt_BR',
+    url: 'https://ab-tech.ia.br',
+    siteName: 'ABTech - Integração de Sistemas Legados com IA',
+    title: 'ABTech - Integração de Sistemas Legados com IA | Agentes de Atendimento Inteligentes',
+    description: 'Especialistas em integração de sistemas antigos com IA. Criamos agentes de atendimento inteligentes e modernizamos sistemas legados com soluções em nuvem, automação e inteligência artificial.',
+    images: [
+      {
+        url: '/logo/logo_f.png',
+        width: 1200,
+        height: 630,
+        alt: 'ABTech - Integração de Sistemas Legados com IA',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'ABTech - Integração de Sistemas Legados com IA',
+    description: 'Especialistas em integração de sistemas antigos com IA. Criamos agentes de atendimento inteligentes e modernizamos sistemas legados.',
+    images: ['/logo/logo_f.png'],
+    creator: '@abtech_ia',
+  },
+  alternates: {
+    canonical: 'https://ab-tech.ia.br',
+    languages: {
+      'pt-BR': 'https://ab-tech.ia.br',
+      'en-US': 'https://ab-tech.ia.br/en',
+    },
+  },
+  verification: {
+    google: 'gerando...',
+  },
 };
 
 export default function RootLayout({
@@ -26,7 +104,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
+      <head>
+        <StructuredData />
+        <GoogleAnalytics />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

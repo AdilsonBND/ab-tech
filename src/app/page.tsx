@@ -5,6 +5,7 @@ import AboutButton from "./components/AboutButton";
 import RevealText from "./components/RevealText";
 import Slider from "./components/Slider";
 import WhatsAppButton from "./components/WhatsAppButton";
+import LocalSEO from "./components/LocalSEO";
 import React, { useState, useRef } from "react";
 import Image from "next/image";
 import ViewImageModal, { ViewImageModalRef } from "./components/ViewImage";
@@ -254,6 +255,9 @@ export default function Home() {
             <RevealText>
             <WhatsAppButton lang={lang} />
             </RevealText>
+            
+            {/* SEO Local - Componente oculto para indexação */}
+            <LocalSEO />
         </div>
     );
 }
