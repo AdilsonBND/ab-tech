@@ -142,7 +142,7 @@ export default function About() {
       <div className="w-full max-w-[700px]">
         <div className="flex flex-row justify-between items-center">
           <div className="cursor-pointer flex flex-row items-center text-sm font-bold bg-white/5 border border-white/10 hover:border-white/10 hover:bg-white/5 animation rounded-4xl items-align-center px-15"
-              onClick={() => window.open('https://ab-tech-crm.vercel.app/', '_blank')}>
+              onClick={() => window.open('https://crm.ab-tech.ia.br', '_blank')}>
               <ChartBarIcon className="w-6 h-6 text-white/50 mr-3" /> 
               {isPT ? "Visite nosso CRM" : "Visit our CRM"}
           </div>

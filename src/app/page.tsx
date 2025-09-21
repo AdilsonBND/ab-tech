@@ -34,7 +34,7 @@ export default function Home() {
 
             <RevealText className="flex flex-row justify-between items-center">
                 <div className="cursor-pointer flex flex-row items-center text-sm font-bold bg-white/5 border border-white/10 hover:border-white/10 hover:bg-white/5 animation rounded-4xl items-align-center px-15"
-                    onClick={() => window.open('https://ab-tech-crm.vercel.app/', '_blank')}>
+                    onClick={() => window.open('https://crm.ab-tech.ia.br', '_blank')}>
                     <ChartBarIcon className="w-6 h-6 text-white/50 mr-3" /> 
                     {isPT ? "Visite nosso CRM" : "Visit our CRM"}
                 </div>
@@ -88,12 +88,12 @@ export default function Home() {
             <RevealText>
                 <div 
                     className="relative w-full h-64 md:h-96 rounded-2xl border border-white/10 cursor-pointer group hover:border-white/30 hover:scale-[1.02] transition-all duration-300 flex items-center justify-center overflow-hidden"
-                    onClick={() => window.open('https://ab-tech-crm.vercel.app/', '_blank')}
+                    onClick={() => window.open('https://crm.ab-tech.ia.br', '_blank')}
                     role="button"
                     tabIndex={0}
                     onKeyDown={(e) => {
                         if (e.key === 'Enter' || e.key === ' ') {
-                            window.open('https://ab-tech-crm.vercel.app/', '_blank');
+                            window.open('https://crm.ab-tech.ia.br', '_blank');
                         }
                     }}
                 >
