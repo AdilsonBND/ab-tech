@@ -93,9 +93,6 @@ export const metadata: Metadata = {
       'en-US': 'https://ab-tech.ia.br/en',
     },
   },
-  verification: {
-    google: 'gerando...',
-  },
 };
 
 export default function RootLayout({

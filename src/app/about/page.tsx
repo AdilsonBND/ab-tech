@@ -114,7 +114,7 @@ const techs = [
 
 export default function About() {
 
-  const [lang, setLang] = useState<'en' | 'pt'>('en');
+  const [lang, setLang] = useState<'en' | 'pt'>('pt');
   const isPT = lang === 'pt';
 
   return (

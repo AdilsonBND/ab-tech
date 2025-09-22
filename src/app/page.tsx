@@ -12,7 +12,7 @@ import ViewImageModal, { ViewImageModalRef } from "./components/ViewImage";
 
 export default function Home() {
 
-    const [lang, setLang] = useState<'en' | 'pt'>('en');
+    const [lang, setLang] = useState<'en' | 'pt'>('pt');
     const isPT = lang === 'pt';
 
     const modalRef = useRef<ViewImageModalRef>(null);
