@@ -65,16 +65,16 @@ export default function Home() {
             <RevealText className="mt-4">
                 <h1 className="text-2xl sm:text-5xl font-bold">
                     {isPT
-                        ? "Transformando ideias em sistemas escaláveis e conectados."
-                        : "Building ideas into scalable, connected systems."}
+                        ? "Integrando qualquer base de dados com IA para revolucionar seu negócio."
+                        : "Integrating any database with AI to revolutionize your business."}
                 </h1>
             </RevealText>
 
             <RevealText>
                 <p className="text-lg text-gray-500">
                     {isPT
-                        ? "Foco na integração perfeita entre plataformas, serviços e sistemas legados, com compromisso com desempenho, segurança e inovação."
-                        : "Focused on seamless integration between platforms, services, and legacy systems, with a commitment to performance, security, and innovation."}
+                        ? "Desenvolvemos soluções que integram qualquer base de dados com IA, possibilitando que seus clientes façam ofertas personalizadas, negociação automática de descontos e orçamentos inteligentes, além de um sistema CRM completo em nuvem construído com as mais modernas tecnologias."
+                        : "We develop solutions that integrate any database with AI, enabling your clients to make personalized offers, automatic discount negotiation, and intelligent quotes, plus a complete cloud-based CRM system built with the most modern technologies."}
                 </p>
             </RevealText>
 
@@ -114,10 +114,10 @@ export default function Home() {
                     <div className="relative z-10 text-center">
                         <ChartBarIcon className="w-16 h-16 text-white/90 mx-auto mb-4 group-hover:text-white group-hover:scale-110 transition-all duration-300" />
                         <h3 className="text-xl font-bold text-white mb-2 group-hover:text-white/90">
-                            {isPT ? "VISITE NOSSO CRM" : "VISIT OUR CRM"}
+                            {isPT ? "SISTEMA CRM COMPLETO" : "COMPLETE CRM SYSTEM"}
                         </h3>
                         <p className="text-sm text-white/80 group-hover:text-white/90">
-                            {isPT ? "Sistema de gestão completo" : "Complete management system"}
+                            {isPT ? "Modernize sua empresa com IA e tecnologias em nuvem" : "Modernize your business with AI and cloud technologies"}
                         </p>
                     </div>
                 </div>
@@ -129,8 +129,8 @@ export default function Home() {
                     <RevealText>
                         <p className="text-lg text-gray-500">
                             {isPT
-                                ? "Integrando sistemas legados — mesmo que os dados estejam em TXT, CSV, Excel ou bancos de dados antigos — modernizamos ou conectamos o que já existe para criar soluções em nuvem, mobile e com inteligência artificial."
-                                : "Integrating legacy systems — whether data is in TXT, CSV, Excel, or legacy databases — we modernize or connect existing systems to build cloud, mobile, and AI-powered solutions."
+                                ? "Nossa especialidade é integrar qualquer tipo de base de dados (TXT, CSV, Excel, bancos antigos) com inteligência artificial, permitindo que seus clientes façam ofertas personalizadas, negociação automática de descontos e geração inteligente de orçamentos."
+                                : "Our specialty is integrating any type of database (TXT, CSV, Excel, legacy databases) with artificial intelligence, enabling your clients to make personalized offers, automatic discount negotiation, and intelligent quote generation."
                             }
                         </p>
                     </RevealText>
@@ -140,8 +140,8 @@ export default function Home() {
                     <RevealText>
                         <p className="text-lg text-gray-500">
                             {isPT
-                                ? "Foco na integração perfeita entre plataformas, serviços e sistemas legados, com compromisso com desempenho, segurança e inovação."
-                                : "Focused on seamless integration between platforms, services, and legacy systems, with a commitment to performance, security, and innovation."
+                                ? "Oferecemos um sistema CRM completo em nuvem, construído com as mais modernas tecnologias, para empresas que desejam modernizar e automatizar seus processos de vendas e relacionamento com clientes."
+                                : "We offer a complete cloud-based CRM system, built with the most modern technologies, for companies that want to modernize and automate their sales processes and customer relationships."
                             }
 
                         </p>
@@ -164,8 +164,8 @@ export default function Home() {
                     <RevealText>
                         <p className="text-lg text-gray-500">
                             {isPT
-                                ? "Integramos sistemas legados com inteligência artificial e soluções em nuvem, promovendo inovação contínua e transformação digital segura."
-                                : "We integrate legacy systems with artificial intelligence and cloud solutions, driving continuous innovation and secure digital transformation."
+                                ? "Nossa IA analisa dados históricos dos seus clientes para criar ofertas personalizadas, calcular descontos otimizados e gerar orçamentos precisos automaticamente, aumentando significativamente as vendas deles."
+                                : "Our AI analyzes your clients' historical data to create personalized offers, calculate optimized discounts, and generate accurate quotes automatically, significantly increasing their sales."
                             }
                         </p>
                     </RevealText>
@@ -175,8 +175,8 @@ export default function Home() {
                     <RevealText>
                         <p className="text-lg text-gray-500">
                             {isPT
-                                ? "Transformamos tecnologias antigas em ativos estratégicos por meio de arquiteturas modernas, automação inteligente e conectividade em nuvem."
-                                : "We turn legacy technologies into strategic assets through modern architectures, intelligent automation, and cloud connectivity."
+                                ? "Sistema CRM completo com integração de IA para automatizar processos de vendas, gestão de leads, follow-up inteligente e relatórios avançados em tempo real."
+                                : "Complete CRM system with AI integration to automate sales processes, lead management, intelligent follow-up, and advanced real-time reporting."
                             }
 
                         </p>
@@ -197,8 +197,8 @@ export default function Home() {
                     <RevealText>
                         <p className="text-lg text-gray-500">
                             {isPT
-                                ? "Impulsionando a inovação por meio de desenvolvimento inteligente, automação integrada e arquitetura escalável que conecta sistemas e promove transformação."
-                                : "Empowering innovation through smart development, seamless automation, and scalable architecture that connect systems and drive transformation."
+                                ? "Construído com as mais modernas tecnologias em nuvem, nosso sistema oferece escalabilidade, segurança e performance excepcionais para empresas de qualquer tamanho."
+                                : "Built with the most modern cloud technologies, our system offers exceptional scalability, security, and performance for companies of any size."
                             }
                         </p>
                     </RevealText>
@@ -208,8 +208,8 @@ export default function Home() {
                     <RevealText>
                         <p className="text-lg text-gray-500">
                             {isPT
-                                ? "Em um mundo de mudanças rápidas, adaptabilidade e integração são essenciais para manter a relevância e liderar o futuro."
-                                : "In a world of rapid change, adaptability and integration are the keys to staying relevant and leading the future."
+                                ? "Modernize sua empresa com nossa solução completa: integração de dados com IA, CRM avançado, que permite ofertas personalizadas e negociação automática de descontos para seus clientes."
+                                : "Modernize your business with our complete solution: data integration with AI, advanced CRM, enabling personalized offers and automatic discount negotiation for your clients."
                             }
 
                         </p>
@@ -233,8 +233,8 @@ export default function Home() {
                     <RevealText>
                         <p className="text-lg text-gray-500">
                             {isPT
-                                ? "Desafios não são obstáculos — são mapas para criar sistemas mais inteligentes e eficientes que evoluem com seu negócio."
-                                : "Challenges aren’t obstacles — they’re blueprints for creating smarter, leaner systems that evolve with your business."
+                                ? "Transformamos dados complexos em insights acionáveis, automatizando processos de vendas e maximizando oportunidades de negócio com inteligência artificial."
+                                : "We transform complex data into actionable insights, automating sales processes and maximizing business opportunities with artificial intelligence."
                             }
                         </p>
                     </RevealText>
@@ -244,8 +244,8 @@ export default function Home() {
                     <RevealText>
                         <p className="text-lg text-gray-500">
                             {isPT
-                                ? "O progresso real não se mede apenas pela velocidade — mas pela direção, propósito e capacidade de adaptação no momento certo."
-                                : "True progress isn’t just about speed — it’s about direction, purpose, and the ability to pivot when it matters most."
+                                ? "Soluções completas em nuvem que integram qualquer base de dados com IA, oferecendo CRM avançado, automação de vendas e relatórios inteligentes para impulsionar os resultados dos seus clientes."
+                                : "Complete cloud solutions that integrate any database with AI, offering advanced CRM, sales automation, and intelligent reporting to boost your clients' results."
                             }
                         </p>
                     </RevealText>
