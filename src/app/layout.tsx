@@ -93,6 +93,7 @@ export const metadata: Metadata = {
       'en-US': 'https://ab-tech.ia.br/en',
     },
   },
+  manifest: '/manifest.json',
 };
 
 export default function RootLayout({

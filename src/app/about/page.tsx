@@ -1,8 +1,74 @@
-'use client';
-
-import { useState } from 'react';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import { ChartBarIcon } from '@heroicons/react/24/outline';
+import ClientAbout from '../components/ClientAbout';
+
+export const metadata: Metadata = {
+  title: "Sobre - Adilson Biondo | ABTech - Especialista em Integração de Sistemas Legados com IA",
+  description: "Conheça Adilson Biondo, especialista em integração de sistemas legados com IA. Engenheiro de software com expertise em Node.js, Python, C#, .NET, MongoDB, MySQL, Docker, Kubernetes e muito mais. Atendimento em Campo Mourão, Maringá, Cianorte, Umuarama e região.",
+  keywords: [
+    "Adilson Biondo",
+    "engenheiro de software",
+    "especialista sistemas legados",
+    "integração IA",
+    "Node.js",
+    "Python",
+    "C#",
+    ".NET",
+    "MongoDB",
+    "MySQL",
+    "Docker",
+    "Kubernetes",
+    "Campo Mourão",
+    "Maringá",
+    "Cianorte",
+    "Umuarama",
+    "Paraná",
+    "desenvolvedor",
+    "programador",
+    "ABTech"
+  ],
+  authors: [{ name: "Adilson Biondo", url: "https://ab-tech.ia.br" }],
+  creator: "ABTech",
+  publisher: "ABTech",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    type: 'profile',
+    locale: 'pt_BR',
+    url: 'https://ab-tech.ia.br/about',
+    siteName: 'ABTech - Integração de Sistemas Legados com IA',
+    title: 'Sobre - Adilson Biondo | ABTech - Especialista em Integração de Sistemas Legados com IA',
+    description: 'Conheça Adilson Biondo, especialista em integração de sistemas legados com IA. Engenheiro de software com expertise em múltiplas tecnologias.',
+    images: [
+      {
+        url: '/profile/I.jpeg',
+        width: 400,
+        height: 400,
+        alt: 'Adilson Biondo - Engenheiro de Software',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Sobre - Adilson Biondo | ABTech',
+    description: 'Conheça Adilson Biondo, especialista em integração de sistemas legados com IA.',
+    images: ['/profile/I.jpeg'],
+    creator: '@abtech_ia',
+  },
+  alternates: {
+    canonical: 'https://ab-tech.ia.br/about',
+  },
+};
 
 const techs = [
   {
@@ -113,98 +179,37 @@ const techs = [
 ];
 
 export default function About() {
-
-  const [lang, setLang] = useState<'en' | 'pt'>('pt');
-  const isPT = lang === 'pt';
-
   return (
-    <div className="flex flex-col lg:flex-row items-start justify-center gap-8 px-4 mt-20">
-
-      <div className="max-w-[250px] w-full flex flex-col items-center justify-center mx-auto lg:items-start lg:justify-start lg:mx-0">
-        <Image
-          className="rounded-full mb-4 border border-white/30"
-          src="/profile/I.jpeg"
-          alt="Avatar"
-          width={160}
-          height={160}
-        />
-        <div>
-          <span className="flex flex-col text-2xl f text-gray-300">
-            Adilson L. Biondo Jr
-          </span>
-          <span className="text-sm f text-gray-500">
-            {
-              isPT ? 'Engenheiro de Software' : 'Software Engineer'}
-          </span>
-        </div>
-
+    <>
+      {/* Conteúdo estático para SEO - visível para crawlers */}
+      <div className="sr-only">
+        <h1>Sobre - Adilson Biondo | ABTech - Especialista em Integração de Sistemas Legados com IA</h1>
+        <h2>Adilson L. Biondo Jr - Engenheiro de Software</h2>
+        <p>Especialista em integrações de sistemas legados com soluções modernas, atuando com APIs, serviços em nuvem, inteligência artificial, aplicações móveis e automações robustas.</p>
+        <p>Combinando múltiplas tecnologias, desenvolvo soluções escaláveis e inteligentes, garantindo fluidez nos fluxos de dados, interoperabilidade entre plataformas e eficiência nos processos.</p>
+        
+        <h2>Tecnologias e Especialidades</h2>
+        <h3>Backend e APIs</h3>
+        <p>Node.js, Express.js, Fastify, NestJS, Moleculer - Construção de integrações modernas, APIs e microsserviços escaláveis com alta performance.</p>
+        
+        <h3>Frontend e Mobile</h3>
+        <p>Next.js, Vue.js, React Native - Desenvolvimento de interfaces web reativas e aplicativos móveis nativos usando JavaScript.</p>
+        
+        <h3>Linguagens de Programação</h3>
+        <p>C#, .NET, Python - Integração com DLLs, aplicações Windows, sistemas corporativos, automações, scripts e soluções com IA e dados.</p>
+        
+        <h3>Bancos de Dados</h3>
+        <p>MongoDB, MySQL - Bancos NoSQL para dados flexíveis e escaláveis, e bancos relacionais amplamente utilizados em aplicações web.</p>
+        
+        <h3>DevOps e Infraestrutura</h3>
+        <p>Docker, Kubernetes - Containerização de aplicações para ambientes isolados e portáveis, orquestração de contêineres para escalar, gerenciar e automatizar aplicações em nuvem.</p>
+        
+        <h2>Experiência e Localização</h2>
+        <p>Atendimento especializado em Campo Mourão, Maringá, Cianorte, Umuarama e toda a região Centro-Oeste do Paraná. Especialista em integração de sistemas legados com IA, modernização de sistemas antigos e criação de agentes de atendimento inteligentes.</p>
       </div>
-      <div className="w-full max-w-[700px]">
-        <div className="flex flex-row justify-between items-center">
-          <div className="cursor-pointer flex flex-row items-center text-sm font-bold bg-white/5 border border-white/10 hover:border-white/10 hover:bg-white/5 animation rounded-4xl items-align-center px-15"
-              onClick={() => window.open('https://crm.ab-tech.ia.br', '_blank')}>
-              <ChartBarIcon className="w-6 h-6 text-white/50 mr-3" /> 
-              {isPT ? "Visite nosso CRM" : "Visit our CRM"}
-          </div>
-
-          <div className="flex gap-1">
-            <button onClick={() => setLang('pt')}>
-              <Image
-                src="/flag/br.png"
-                alt="Português"
-                width={24}
-                height={24}
-                className={`rounded-full border ${isPT ? "border-white" : "border-transparent"}`}
-              />
-            </button>
-            <button onClick={() => setLang('en')}>
-              <Image
-                src="/flag/us.png"
-                alt="English"
-                width={24}
-                height={24}
-                className={`rounded-full border ${!isPT ? "border-white" : "border-transparent"}`}
-              />
-            </button>
-          </div>
-        </div>
-        <p className="mb-4 mt-6 text-gray-300">
-          {isPT
-            ? 'Especialista em integrações de sistemas legados com soluções modernas, atuando com APIs, serviços em nuvem, inteligência artificial, aplicações móveis e automações robustas.'
-            : 'Specialist in integrating legacy systems with modern solutions, working with APIs, cloud services, artificial intelligence, mobile applications, and robust automations.'}
-        </p>
-        <p className="mb-8 text-gray-300">
-          {isPT
-            ? 'Combinando múltiplas tecnologias, desenvolvo soluções escaláveis e inteligentes, garantindo fluidez nos fluxos de dados, interoperabilidade entre plataformas e eficiência nos processos.'
-            : 'Combining multiple technologies, I build scalable and intelligent solutions that ensure seamless data flows, platform interoperability, and process efficiency.'}
-        </p>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl w-full">
-          {techs.map((tech) => (
-            <a
-              key={tech.title}
-              href={tech.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-white/5 border border-white/10 hover:border-white/20 rounded-2xl p-4 flex items-center gap-4 transition hover:scale-[1.02]"
-            >
-              <Image
-                src={tech.src}
-                alt={tech.title}
-                width={48}
-                height={48}
-                className="rounded-lg"
-              />
-              <div className="flex flex-col">
-                <strong className="text-white text-lg">{tech.title}</strong>
-                <span className="text-sm text-gray-400">
-                  {isPT ? tech.descPT : tech.descEN}
-                </span>
-              </div>
-            </a>
-          ))}
-        </div>
-      </div>
-    </div>
+      
+      {/* Componente interativo */}
+      <ClientAbout />
+    </>
   );
 }
