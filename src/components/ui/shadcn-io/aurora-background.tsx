@@ -27,31 +27,36 @@ export const AuroraBackground = ({
         style={
           {
             "--aurora":
-              "repeating-linear-gradient(100deg,#1e3a8a_10%,#312e81_15%,#1e40af_20%,#4c1d95_25%,#1e3a8a_30%)",
+              "repeating-linear-gradient(100deg, #1e3a8a 10%, #312e81 15%, #1e40af 20%, #4c1d95 25%, #1e3a8a 30%)",
             "--dark-gradient":
-              "repeating-linear-gradient(100deg,#000_0%,#000_7%,transparent_10%,transparent_12%,#000_16%)",
-            "--white-gradient":
-              "repeating-linear-gradient(100deg,#fff_0%,#fff_7%,transparent_10%,transparent_12%,#fff_16%)",
-
-            "--blue-300": "#1e40af",
-            "--blue-400": "#1e3a8a",
-            "--blue-500": "#1e3a8a",
-            "--indigo-300": "#312e81",
-            "--violet-200": "#4c1d95",
-            "--black": "#000",
-            "--white": "#fff",
-            "--transparent": "transparent",
+              "repeating-linear-gradient(100deg, #000 0%, #000 7%, transparent 10%, transparent 12%, #000 16%)",
           } as React.CSSProperties
         }
       >
         <div
           className={cn(
-            `after:animate-aurora pointer-events-none absolute -inset-[10px] [background-image:var(--dark-gradient),var(--aurora)] [background-size:300%,_200%] [background-position:50%_50%,50%_50%] opacity-70 blur-[10px] will-change-transform [--aurora:repeating-linear-gradient(100deg,var(--blue-500)_10%,var(--indigo-300)_15%,var(--blue-300)_20%,var(--violet-200)_25%,var(--blue-400)_30%)] [--dark-gradient:repeating-linear-gradient(100deg,var(--black)_0%,var(--black)_7%,var(--transparent)_10%,var(--transparent)_12%,var(--black)_16%)] [--white-gradient:repeating-linear-gradient(100deg,var(--white)_0%,var(--white)_7%,var(--transparent)_10%,var(--transparent)_12%,var(--white)_16%)] after:absolute after:inset-0 after:[background-image:var(--dark-gradient),var(--aurora)] after:[background-size:200%,_100%] after:[background-attachment:fixed] after:mix-blend-difference after:content-[""]`,
-
+            "pointer-events-none absolute -inset-[10px] opacity-70 blur-[10px] will-change-transform",
             showRadialGradient &&
-              `[mask-image:radial-gradient(ellipse_at_100%_0%,black_10%,var(--transparent)_70%)]`,
+              "[mask-image:radial-gradient(ellipse_at_100%_0%,black_10%,transparent_70%)]",
           )}
-        ></div>
+          style={{
+            backgroundImage: "var(--dark-gradient), var(--aurora)",
+            backgroundSize: "300%, 200%",
+            backgroundPosition: "50% 50%, 50% 50%",
+            animation: "aurora 60s linear infinite",
+          } as React.CSSProperties}
+        >
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage: "var(--dark-gradient), var(--aurora)",
+              backgroundSize: "200%, 100%",
+              backgroundAttachment: "fixed",
+              mixBlendMode: "difference",
+              animation: "aurora 60s linear infinite",
+            } as React.CSSProperties}
+          ></div>
+        </div>
       </div>
       {children}
     </div>
