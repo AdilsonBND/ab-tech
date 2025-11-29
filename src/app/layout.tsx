@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import VisualBackground from "@/app/components/VisualBackGround";
+import { AuroraBackground } from "@/components/ui/shadcn-io/aurora-background";
 import Footer from "./components/Footer";
 import HeaderPage from "./components/HeaderPage";
 import StructuredData from "./components/StructuredData";
@@ -110,10 +110,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <VisualBackground />
-        <HeaderPage />
-        {children}
-        <Footer />
+        <AuroraBackground className="fixed inset-0 -z-50" showRadialGradient={true}>
+        </AuroraBackground>
+        <div className="relative z-10 w-full min-h-screen">
+          <HeaderPage />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );
