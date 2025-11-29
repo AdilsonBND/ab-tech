@@ -42,7 +42,7 @@ export default function WhatsAppButton({ lang }: WhatsAppButtonProps) {
             {lang === 'pt' ? "Exemplo de Agente" : "Agent Example"}
           </span>
           <span className="text-xs opacity-90">
-            {lang === 'pt' ? "Clique para conversar" : "Click to chat"}
+            {lang === 'pt' ? "( Momentaneamente offline )" : "( Momentarily offline )"}
           </span>
         </div>
         

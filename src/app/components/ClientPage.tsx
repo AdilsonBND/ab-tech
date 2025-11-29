@@ -70,7 +70,7 @@ export default function ClientPage() {
             </RevealText>
 
             <RevealText>
-                <p className="text-lg text-gray-500">
+                <p className="text-lg text-gray-300">
                     {isPT
                         ? "Desenvolvemos soluções que integram qualquer base de dados com IA, possibilitando que seus clientes façam ofertas personalizadas, negociação automática de descontos e orçamentos inteligentes, além de um sistema CRM completo em nuvem construído com as mais modernas tecnologias."
                         : "We develop solutions that integrate any database with AI, enabling your clients to make personalized offers, automatic discount negotiation, and intelligent quotes, plus a complete cloud-based CRM system built with the most modern technologies."}
@@ -126,7 +126,7 @@ export default function ClientPage() {
                 <div className="col-span-1">
 
                     <RevealText>
-                        <p className="text-lg text-gray-500">
+                        <p className="text-lg text-gray-300">
                             {isPT
                                 ? "Nossa especialidade é integrar qualquer tipo de base de dados (TXT, CSV, Excel, bancos antigos) com inteligência artificial, permitindo que seus clientes façam ofertas personalizadas, negociação automática de descontos e geração inteligente de orçamentos."
                                 : "Our specialty is integrating any type of database (TXT, CSV, Excel, legacy databases) with artificial intelligence, enabling your clients to make personalized offers, automatic discount negotiation, and intelligent quote generation."
@@ -137,7 +137,7 @@ export default function ClientPage() {
                 <div className="col-span-1">
 
                     <RevealText>
-                        <p className="text-lg text-gray-500">
+                        <p className="text-lg text-gray-300">
                             {isPT
                                 ? "Oferecemos um sistema CRM completo em nuvem, construído com as mais modernas tecnologias, para empresas que desejam modernizar e automatizar seus processos de vendas e relacionamento com clientes."
                                 : "We offer a complete cloud-based CRM system, built with the most modern technologies, for companies that want to modernize and automate their sales processes and customer relationships."
@@ -161,7 +161,7 @@ export default function ClientPage() {
                 <div className="col-span-1">
 
                     <RevealText>
-                        <p className="text-lg text-gray-500">
+                        <p className="text-lg text-gray-300">
                             {isPT
                                 ? "Nossa IA analisa dados históricos dos seus clientes para criar ofertas personalizadas, calcular descontos otimizados e gerar orçamentos precisos automaticamente, aumentando significativamente as vendas deles."
                                 : "Our AI analyzes your clients' historical data to create personalized offers, calculate optimized discounts, and generate accurate quotes automatically, significantly increasing their sales."
@@ -172,7 +172,7 @@ export default function ClientPage() {
                 <div className="col-span-1">
 
                     <RevealText>
-                        <p className="text-lg text-gray-500">
+                        <p className="text-lg text-gray-300">
                             {isPT
                                 ? "Sistema CRM completo com integração de IA para automatizar processos de vendas, gestão de leads, follow-up inteligente e relatórios avançados em tempo real."
                                 : "Complete CRM system with AI integration to automate sales processes, lead management, intelligent follow-up, and advanced real-time reporting."
@@ -194,7 +194,7 @@ export default function ClientPage() {
                 <div className="col-span-1">
 
                     <RevealText>
-                        <p className="text-lg text-gray-500">
+                        <p className="text-lg text-gray-300">
                             {isPT
                                 ? "Construído com as mais modernas tecnologias em nuvem, nosso sistema oferece escalabilidade, segurança e performance excepcionais para empresas de qualquer tamanho."
                                 : "Built with the most modern cloud technologies, our system offers exceptional scalability, security, and performance for companies of any size."
@@ -205,7 +205,7 @@ export default function ClientPage() {
                 <div className="col-span-1">
 
                     <RevealText>
-                        <p className="text-lg text-gray-500">
+                        <p className="text-lg text-gray-300">
                             {isPT
                                 ? "Modernize sua empresa com nossa solução completa: integração de dados com IA, CRM avançado, que permite ofertas personalizadas e negociação automática de descontos para seus clientes."
                                 : "Modernize your business with our complete solution: data integration with AI, advanced CRM, enabling personalized offers and automatic discount negotiation for your clients."
@@ -230,7 +230,7 @@ export default function ClientPage() {
                 <div className="col-span-1">
 
                     <RevealText>
-                        <p className="text-lg text-gray-500">
+                        <p className="text-lg text-gray-300">
                             {isPT
                                 ? "Transformamos dados complexos em insights acionáveis, automatizando processos de vendas e maximizando oportunidades de negócio com inteligência artificial."
                                 : "We transform complex data into actionable insights, automating sales processes and maximizing business opportunities with artificial intelligence."
@@ -241,7 +241,7 @@ export default function ClientPage() {
                 <div className="col-span-1">
 
                     <RevealText>
-                        <p className="text-lg text-gray-500">
+                        <p className="text-lg text-gray-300">
                             {isPT
                                 ? "Soluções completas em nuvem que integram qualquer base de dados com IA, oferecendo CRM avançado, automação de vendas e relatórios inteligentes para impulsionar os resultados dos seus clientes."
                                 : "Complete cloud solutions that integrate any database with AI, offering advanced CRM, sales automation, and intelligent reporting to boost your clients' results."
