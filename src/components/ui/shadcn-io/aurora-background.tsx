@@ -20,7 +20,7 @@ export const AuroraBackground = ({
         "relative bg-zinc-950 text-slate-50 dark:bg-black",
         className,
       )}
-      {...(props as any)}
+      {...props}
     >
       <div
         className="absolute inset-0 overflow-hidden"
